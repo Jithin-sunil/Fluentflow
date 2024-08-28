@@ -194,32 +194,15 @@ session_start();
                     
 					<i class="fa fa-user icon" aria-hidden="true"></i>
 				</div>
-				<div class="input-box">
-					<input class="name" type="text" name="txtnname" id="txtnname" placeholder="Nick Name" required>
-					<i class="fa fa-user icon" aria-hidden="true"></i>
-				</div>
-			</div>
+			
 			<div class="input-group">
 				<div class="input-box">
 					<input class="name" type="email" name="txtemail" id="txtemail" placeholder="Email Address" required>
 					<i class="fa fa-envelope icon" aria-hidden="true"></i>
 				</div>
-			</div>	
-			<div class="input-group">
-				<div class="input-box">
-					<h4>Date of Birth</h4>
-					<input class="dob" type="text" data-mask="00" name="txtdate" id="txtdate" placeholder="DD">
-					<input class="dob" type="text" data-mask="00" name="txtmonth" id="txtmonth" placeholder="MM">
-					<input class="dob" type="text" data-mask="0000" name="txtyear" id="txtyear" placeholder="YYYY">
-				</div>
-				<div class="input-box">
-					<h4>Gender</h4>
-					<input type="radio" name="rdbgender" id="male" checked  class="radio">
-					<label for="male">Male</label>
-					<input type="radio" name="rdbgender" id="female" class="radio">
-					<label for="female">Female</label>
-				</div>
-			</div>
+			</di
+				
+			
 			<div class="input-group">
 				<div class="input-box">
 					<h4>Payment Details</h4>

@@ -1,6 +1,6 @@
 <?php
 include("../Assests/Connection/Connection.php");
-
+include('Header.php');
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -247,3 +247,6 @@ body {
 </div>
 </body>
 </html>
+<?php
+include('Footer.php');
+?>

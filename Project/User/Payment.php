@@ -195,12 +195,7 @@ session_start();
 					<i class="fa fa-user icon" aria-hidden="true"></i>
 				</div>
 			
-			<div class="input-group">
-				<div class="input-box">
-					<input class="name" type="email" name="txtemail" id="txtemail" placeholder="Email Address" required>
-					<i class="fa fa-envelope icon" aria-hidden="true"></i>
-				</div>
-			</di
+		
 				
 			
 			<div class="input-group">

@@ -18,7 +18,7 @@ session_start();
 </html> -->
 
 <?php
-session_start();
+include('SessionValidation.php');
 ?>
 
 <!DOCTYPE html>

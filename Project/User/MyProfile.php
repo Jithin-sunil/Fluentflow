@@ -1,6 +1,6 @@
 <?php
 include('../Assests/connection/connection.php');
-session_start();
+include('Header.php');
 
  $selUser="select * from tbl_user u inner join tbl_place p on u.place_id = p.place_id inner join tbl_district d on p.district_id where u.user_id = ".$_SESSION['uid'];
 	$user=$con->query($selUser);
@@ -110,4 +110,6 @@ session_start();
 </form>
 
 </body>
-</html>
+</html><?php
+include('Footer.php');
+?>

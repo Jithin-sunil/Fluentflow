@@ -1,6 +1,6 @@
 <!-- <?php
 include('../Assests/connection/connection.php');
-session_start();
+include('Header.php');
 
 if(isset($_GET["cid"]))
 {
@@ -64,3 +64,6 @@ if(isset($_GET["cid"]))
 </form>
 </body>
 </html>
+<?php
+include('Footer.php');
+?>

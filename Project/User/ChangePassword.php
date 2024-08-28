@@ -1,6 +1,6 @@
 <?php
 include('../Assests/connection/connection.php');
-session_start();
+include('Header.php');
 if(isset($_POST['btnchangepassword']))
 {
 	$OldPassword = $_POST['txtoldpassword'];
@@ -70,3 +70,6 @@ if(isset($_POST['btnchangepassword']))
 </form>
 </body>
 </html>
+<?php
+include('Footer.php');
+?>

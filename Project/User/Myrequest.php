@@ -1,5 +1,5 @@
 <?php
-
+include('Header.php');
 include('../Assests/connection/connection.php');
 
 if(isset($_GET['cid']))
@@ -96,4 +96,6 @@ if(isset($_GET['cid']))
   </table>
 </form>
 </body>
-</html>
+</html><?php
+include('Footer.php');
+?>

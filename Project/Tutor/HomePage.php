@@ -20,7 +20,9 @@ session_start();
 </body>
 </html> -->
 
-
+<?php
+include('SessionValidation.php');
+?>
 
 
 <!DOCTYPE html>

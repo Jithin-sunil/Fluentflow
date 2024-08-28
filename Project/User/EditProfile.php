@@ -1,6 +1,6 @@
 <?php
 include('../Assests/connection/connection.php');
-session_start();
+include('Header.php');
 if(isset($_POST['btnedit']))
 {
 	$name=$_POST['txtname'];
@@ -68,4 +68,6 @@ if(isset($_POST['btnedit']))
   </table>
 </form>
 </body>
-</html>
+</html><?php
+include('Footer.php');
+?>

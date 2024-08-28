@@ -1,5 +1,5 @@
 <?php
-session_start();
+include('Header.php');
 include('../Assests/connection/connection.php');
 if(isset($_POST['btnsubmit']))
 {
@@ -86,4 +86,6 @@ if(isset($_GET["delID"]))
   </table>
 </form>
 </body>
-</html>
+</html><?php
+include('Footer.php');
+?>

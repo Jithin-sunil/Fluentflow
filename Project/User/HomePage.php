@@ -1,5 +1,5 @@
 <!-- <?php
-session_start();
+
 ?>
 
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
@@ -122,7 +122,7 @@ include('SessionValidation.php');
             <a href="Viewcourse.php" class="nav-item nav-link">Course</a>
             <a href="ViewTutor.php" class="nav-item nav-link">Tutors</a>
             <a href="Myrequest.php" class="nav-item nav-link">Requests</a>
-            <a href="logout.php" class="nav-item nav-link">Log out</a>
+            <a href="../Logout.php" class="nav-item nav-link">Log out</a>
         </div>
     </div>
 </nav>

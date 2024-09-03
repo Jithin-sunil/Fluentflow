@@ -12,60 +12,7 @@ include('Header.php');
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <title>User Myprofile</title>
-<style>
-    body {
-        font-family: Arial, sans-serif;
-        background-color: #f4f4f4;
-        margin: 0;
-        padding: 0;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        height: 100vh;
-    }
 
-    table {
-        width: 100%;
-        max-width: 500px;
-        border-collapse: collapse;
-        box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
-        background-color: #fff;
-        border-radius: 8px;
-        overflow: hidden;
-    }
-
-    table img {
-        width: 100%;
-        height: auto;
-        border-bottom: 2px solid #ddd;
-    }
-
-    td {
-        padding: 15px;
-        font-size: 14px;
-        color: #333;
-    }
-
-    td:first-child {
-        font-weight: bold;
-        background-color: #f9f9f9;
-        width: 40%;
-    }
-
-    tr:last-child td {
-        text-align: center;
-    }
-
-    a {
-        color: #007bff;
-        text-decoration: none;
-        font-weight: bold;
-    }
-
-    a:hover {
-        text-decoration: underline;
-    }
-</style>
 </head>
 
 <body>

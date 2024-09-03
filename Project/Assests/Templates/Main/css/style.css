@@ -78,10 +78,10 @@
 
 
 /*** Navbar ***/
-.navbar.fixed-top {
+/* .navbar.fixed-top {
     display: none;
     transition: .5s;
-}
+} */
 
 .navbar .navbar-nav .nav-link {
     padding: 20px 15px;

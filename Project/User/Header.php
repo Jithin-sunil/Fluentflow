@@ -1,6 +1,4 @@
-<!-- <?php
-session_start();
-?>
+<!-- 
 
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
@@ -53,46 +51,7 @@ include('SessionValidation.php');
 
 
 
-<style>
-    .navbar {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 10px 20px;
-    background-color: #ffffff; /* Background color of the navbar */
-}
 
-.navbar-icon {
-    display: flex;
-    align-items: center;
-}
-
-.navbar-icon img {
-    height: 40px; /* Adjust the size of the icon */
-}
-
-.navbar-links {
-    list-style: none;
-    display: flex;
-    margin: 0;
-    padding: 0;
-}
-
-.navbar-links li {
-    margin-left: 20px; /* Space between links */
-}
-
-.navbar-links a {
-    text-decoration: none;
-    color: #000000; /* Link color */
-    font-weight: bold;
-}
-
-.navbar-links a:hover {
-    color: #ff9900; /* Link hover color */
-}
-
-</style>
     <!-- Template Stylesheet -->
     <link href="../Assests/Templates/Main/css/style.css" rel="stylesheet">
 </head>
@@ -108,7 +67,7 @@ include('SessionValidation.php');
 
 
     <!-- Navbar Start -->
-    <nav class="navbar navbar-expand-lg bg-white navbar-light fixed-top shadow py-lg-0 px-4 px-lg-5 wow fadeIn" data-wow-delay="0.1s">
+    <nav class="navbar navbar-expand-lg bg-white navbar-light fixed-top  shadow py-lg-0 px-4 px-lg-5 wow fadeIn" >
     <a href="index.html" class="navbar-brand">
         <h1 class="text-primary fw-bold m-0">FluentFlow</h1>
     </a>
@@ -134,7 +93,7 @@ include('SessionValidation.php');
     <div class="container-fluid bg-light my-6 mt-0" id="home">
         <div class="container">
             <div class="row g-5 align-items-center">
-                <div class="col-lg-6 py-6 pb-0 pt-lg-0">
+                <!-- <div class="col-lg-6 py-6 pb-0 pt-lg-0">
                     <h3 class="text-primary mb-3">I'm</h3>
                     <h1 class="display-3 mb-3">Kate Winslet</h1>
                     <h2 class="typed-text-output d-inline"></h2>
@@ -147,10 +106,10 @@ include('SessionValidation.php');
                         </button>
                         <h5 class="ms-4 mb-0 d-none d-sm-block">Play Video</h5>
                     </div>
-                </div>
-                <div class="col-lg-6">
+                </div> -->
+                <!-- <div class="col-lg-6">
                     <img class="img-fluid" src="../Assests/Templates/Main/img/profile.png" alt="">
-                </div>
+                </div> -->
             </div>
         </div>
     </div>

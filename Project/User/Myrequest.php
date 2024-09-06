@@ -79,7 +79,7 @@ if(isset($_GET['cid']))
       
         
         ?>
-        <a href=""> Exam</a>
+        <a href="Exam.php"> Exam</a>
         <a href="Rating.php?pid=<?php echo $data['tutor_id']?>">Rating</a>
         <?php
       }

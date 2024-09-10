@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Sep 02, 2024 at 06:24 AM
+-- Generation Time: Sep 10, 2024 at 06:05 AM
 -- Server version: 10.4.24-MariaDB
 -- PHP Version: 8.1.5
 
@@ -160,14 +160,10 @@ CREATE TABLE `tbl_choice` (
 --
 
 INSERT INTO `tbl_choice` (`choice_id`, `choice_content`, `question_id`, `choice_status`) VALUES
-(1, 'Elon Musk', 1, 1),
-(2, 'Joseph ', 1, 0),
-(3, 'Jenin', 1, 0),
-(4, 'nandu', 1, 0),
-(5, 'cen', 2, 0),
-(6, 'alto', 2, 0),
-(7, 'bmw', 2, 1),
-(8, 'benz', 2, 0);
+(13, '1', 3, 0),
+(14, '6', 3, 0),
+(15, '0', 3, 0),
+(16, '5', 3, 1);
 
 -- --------------------------------------------------------
 
@@ -252,8 +248,17 @@ CREATE TABLE `tbl_exambody` (
   `exambody_id` int(11) NOT NULL,
   `examhead_id` int(11) NOT NULL,
   `question_id` int(11) NOT NULL,
-  `choice_id` int(11) NOT NULL
+  `choice_id` int(11) NOT NULL,
+  `is_correct_choice_id` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Dumping data for table `tbl_exambody`
+--
+
+INSERT INTO `tbl_exambody` (`exambody_id`, `examhead_id`, `question_id`, `choice_id`, `is_correct_choice_id`) VALUES
+(3, 8, 3, 14, 0),
+(4, 9, 3, 16, 1);
 
 -- --------------------------------------------------------
 
@@ -262,10 +267,19 @@ CREATE TABLE `tbl_exambody` (
 --
 
 CREATE TABLE `tbl_examhead` (
-  `test_id` int(11) NOT NULL,
+  `examhead_id` int(11) NOT NULL,
   `questionpaper_id` int(11) NOT NULL,
-  `user_id` int(11) NOT NULL
+  `user_id` int(11) NOT NULL,
+  `exam_date` varchar(50) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Dumping data for table `tbl_examhead`
+--
+
+INSERT INTO `tbl_examhead` (`examhead_id`, `questionpaper_id`, `user_id`, `exam_date`) VALUES
+(8, 2, 12, '2024-09-07 09:32:48'),
+(9, 2, 12, '2024-09-07 09:34:39');
 
 -- --------------------------------------------------------
 
@@ -332,7 +346,8 @@ CREATE TABLE `tbl_question` (
 
 INSERT INTO `tbl_question` (`question_id`, `question_content`, `questionpaper_id`) VALUES
 (1, 'Most rich man in  the world', 1),
-(2, 'best car in the world', 1);
+(2, 'best car in the world', 1),
+(3, 'Number1', 2);
 
 -- --------------------------------------------------------
 
@@ -354,7 +369,8 @@ CREATE TABLE `tbl_questionpaper` (
 --
 
 INSERT INTO `tbl_questionpaper` (`questionpaper_id`, `questionpaper_date`, `tutor_id`, `questionpaper_status`, `language_id`, `questionpaper_name`) VALUES
-(1, '2024-08-21', 3, 0, 0, 'Hard');
+(1, '2024-08-21', 3, 0, 0, 'Hard'),
+(2, '2024-09-06', 3, 0, 0, 'Easy');
 
 -- --------------------------------------------------------
 
@@ -570,7 +586,7 @@ ALTER TABLE `tbl_exambody`
 -- Indexes for table `tbl_examhead`
 --
 ALTER TABLE `tbl_examhead`
-  ADD PRIMARY KEY (`test_id`);
+  ADD PRIMARY KEY (`examhead_id`);
 
 --
 -- Indexes for table `tbl_language`
@@ -670,7 +686,7 @@ ALTER TABLE `tbl_chatlist`
 -- AUTO_INCREMENT for table `tbl_choice`
 --
 ALTER TABLE `tbl_choice`
-  MODIFY `choice_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
+  MODIFY `choice_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=17;
 
 --
 -- AUTO_INCREMENT for table `tbl_complaint`
@@ -694,13 +710,13 @@ ALTER TABLE `tbl_district`
 -- AUTO_INCREMENT for table `tbl_exambody`
 --
 ALTER TABLE `tbl_exambody`
-  MODIFY `exambody_id` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `exambody_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 
 --
 -- AUTO_INCREMENT for table `tbl_examhead`
 --
 ALTER TABLE `tbl_examhead`
-  MODIFY `test_id` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `examhead_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
 
 --
 -- AUTO_INCREMENT for table `tbl_language`
@@ -718,13 +734,13 @@ ALTER TABLE `tbl_place`
 -- AUTO_INCREMENT for table `tbl_question`
 --
 ALTER TABLE `tbl_question`
-  MODIFY `question_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+  MODIFY `question_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 
 --
 -- AUTO_INCREMENT for table `tbl_questionpaper`
 --
 ALTER TABLE `tbl_questionpaper`
-  MODIFY `questionpaper_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+  MODIFY `questionpaper_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 
 --
 -- AUTO_INCREMENT for table `tbl_review`

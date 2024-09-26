@@ -5,7 +5,7 @@ session_start();
 	if(isset($_POST["btn_pay"]))
 	{
 		
-				$a = "update tbl_booking set booking_status='2' where booking_id='".$_GET["bid"]."'";
+				$a = "update tbl_booking set booking_status='3'  where booking_id='".$_GET["bid"]."'";
 				if($con->query($a))
 				{
 					
@@ -24,6 +24,7 @@ session_start();
 	}
 	
 	?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -187,16 +188,7 @@ session_start();
 	<div class="wrapper">
 		<h2>Payment Gateway</h2>
 		<form method="POST">
-			<h4>Account</h4>
-			<div class="input-group">
-				<div class="input-box">
-					<input class="name" type="text" name="txtname" id="txtname" placeholder="Full Name" required>
-                    
-					<i class="fa fa-user icon" aria-hidden="true"></i>
-				</div>
 			
-		
-				
 			
 			<div class="input-group">
 				<div class="input-box">

@@ -108,7 +108,7 @@ include('SessionValidation.php');
 
 
     <!-- Navbar Start -->
-    <nav class="navbar navbar-expand-lg bg-white navbar-light fixed-top shadow py-lg-0 px-4 px-lg-5 wow fadeIn" data-wow-delay="0.1s">
+    <nav class="navbar navbar-expand-lg bg-white navbar-light fixed-top shadow py-lg-0 px-4 " data-wow-delay="0.1s">
     <a href="index.html" class="navbar-brand">
         <h1 class="text-primary fw-bold m-0">FluentFlow</h1>
     </a>
@@ -120,11 +120,10 @@ include('SessionValidation.php');
             <a href="#home" class="nav-item nav-link active">Home</a>
             <a href="MyProfile.php" class="nav-item nav-link">Profile</a>
             <a href="Viewcourse.php" class="nav-item nav-link">Course</a>
-            <a href="ViewTutor.php" class="nav-item nav-link">Tutors</a>
             <a href="Myrequest.php" class="nav-item nav-link">Requests</a>
             <a href="../Logout.php" class="nav-item nav-link">Log out</a>
         </div>
-    </div>
+    </div> 
 </nav>
 
     <!-- Navbar End -->
@@ -135,10 +134,10 @@ include('SessionValidation.php');
         <div class="container">
             <div class="row g-5 align-items-center">
                 <div class="col-lg-6 py-6 pb-0 pt-lg-0">
-                    <h3 class="text-primary mb-3">I'm</h3>
-                    <h1 class="display-3 mb-3">Kate Winslet</h1>
+                    <h3 class="text-primary mb-3"><b>Hey,</b></h3>
+                    <h1 class="display-3 mb-3">Learn Your Favorite Language From Online.</h1>
                     <h2 class="typed-text-output d-inline"></h2>
-                    <div class="typed-text d-none">Personalized learning , Fun and Effective , Stay Motivated, Effective way to learn a language! </div>
+                    <div class="typed-text d-none">Personalized learning , Fun and Effective , Stay Motivated, Effective way to learn a language! , Affordable Price , Learn for real life</div>
                     <div class="d-flex align-items-center pt-5">
                         <a href="" class="btn btn-primary py-3 px-4 me-5">Download CV</a>
                         <button type="button" class="btn-play" data-bs-toggle="modal"
@@ -390,7 +389,7 @@ include('SessionValidation.php');
                         <div class="ms-sm-4">
                             <h4 class="mb-3">Worldwide community</h4>
                             <h6 class="mb-3">Start from <span class="text-primary">$199</span></h6>
-                            <span>Native speakers teach you their language, while you teach them yours. Millions of people use HelloTalk to practice 150+ languages.</span>
+                            <span>Native speakers teach you their language, while you teach them yours. Millions of people use Fluentflow to practice 150+ languages.</span>
                         </div>
                     </div>
                 </div>

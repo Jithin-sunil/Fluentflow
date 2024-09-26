@@ -1,3 +1,7 @@
+<?php
+include('Header.php')
+?>
+
 <!DOCTYPE HTML>
 <html>
 <head>
@@ -10,6 +14,14 @@
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 </head>
+<style>
+    .text-primary {
+    color: #8100ff !important;
+}
+.bg-dark {
+    background-color: #12141D !important;
+}
+</style>
 <body>
     <div class="container">
     	<h1 class="mt-5 mb-5"></h1>
@@ -334,3 +346,7 @@ $(document).ready(function(){
 });
 
 </script>
+
+<?php
+include('Footer.php')
+?>

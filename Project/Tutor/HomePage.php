@@ -112,7 +112,7 @@ include('SessionValidation.php');
 
 
     <!-- Navbar Start -->
-    <nav class="navbar navbar-expand-lg bg-white navbar-light fixed-top shadow py-lg-0 px-4 px-lg-5 wow fadeIn" data-wow-delay="0.1s">
+    <nav class="navbar navbar-expand-lg bg-white navbar-light fixed-top shadow py-lg-0 px-4 " data-wow-delay="0.1s">
     <a href="index.html" class="navbar-brand">
         <h1 class="text-primary fw-bold m-0">FluentFlow</h1>
     </a>
@@ -122,11 +122,10 @@ include('SessionValidation.php');
     <div class="collapse navbar-collapse justify-content-between py-4 py-lg-0" id="navbarCollapse">
         <div class="navbar-nav ms-auto py-0">
             <a href="#home" class="nav-item nav-link active">Home</a>
-            <a href="MyProfile.php" class="nav-item nav-link">MyProfile</a>
+            <a href="MyProfile.php" class="nav-item nav-link">Profile</a>
             <a href="Course.php" class="nav-item nav-link">Course</a>
+            <a href="Mylanguage.php" class="nav-item nav-link">Language</a>
             <a href="Viewusercourse.php" class="nav-item nav-link">Usercourse</a>
-            <a href="UserPayment.php" class="nav-item nav-link">Payment</a>
-            <a href="#contact" class="nav-item nav-link">Contact</a>
             <a href="logout.php" class="nav-item nav-link">Log out</a>
         </div>
     </div>
@@ -140,10 +139,10 @@ include('SessionValidation.php');
         <div class="container">
             <div class="row g-5 align-items-center">
                 <div class="col-lg-6 py-6 pb-0 pt-lg-0">
-                    <h3 class="text-primary mb-3">I'm</h3>
-                    <h1 class="display-3 mb-3">Kate Winslet</h1>
+                    <h3 class="text-primary mb-3"><b>Hey,</b></h3>
+                    <h1 class="display-3 mb-3">Learn Your Favorite Language From Online.</h1>
                     <h2 class="typed-text-output d-inline"></h2>
-                    <div class="typed-text d-none">Personalized learning , Fun and Effective , Stay Motivated, Effective way to learn a language! </div>
+                    <div class="typed-text d-none">Personalized learning , Fun and Effective , Stay Motivated, Effective way to learn a language! , Affordable Price , Learn for real life</div>
                     <div class="d-flex align-items-center pt-5">
                         <a href="" class="btn btn-primary py-3 px-4 me-5">Download CV</a>
                         <button type="button" class="btn-play" data-bs-toggle="modal"
@@ -193,9 +192,9 @@ include('SessionValidation.php');
                             <h1 class="display-1 mb-0">15</h1>
                             <h5 class="mb-0">Years</h5>
                         </div>
-                        <h3 class="lh-base mb-0">of working experience </h3>
+                        <h3 class="lh-base mb-0">of Working Experience and Expert Tutors </h3>
                     </div>
-                    <p class="mb-4">Stet no et lorem dolor et diam, amet duo ut dolore vero eos. No stet est diam rebum amet diam ipsum. Clita clita labore, dolor duo nonumy clita sit at, sed sit sanctus dolor eos.</p>
+                    <p class="mb-4">With 15 years of experience in the language learning platform industry,clients describe the platform as a reliable and innovative solution,showcasing extensive expertise in delivering effective and engaging, and user-friendly language education that adapts to evolving learners needs</p>
                     <p class="mb-3"><i class="far fa-check-circle text-primary me-3"></i>Afordable Prices</p>
                     <p class="mb-3"><i class="far fa-check-circle text-primary me-3"></i>Learn with Confidence</p>
                     <p class="mb-3"><i class="far fa-check-circle text-primary me-3"></i>Learn for real life</p>
@@ -214,12 +213,12 @@ include('SessionValidation.php');
                         <h5 class="border-end pe-3 me-3 mb-0">Happy Clients</h5>
                         <h2 class="text-primary fw-bold mb-0" data-toggle="counter-up">267902</h2>
                     </div>
-                    <p class="mb-4">Stet no et lorem dolor et diam, amet duo ut dolore vero eos. No stet est diam amet diam ipsum clita labore dolor duo clita.</p>
+                    <p class="mb-4">The interactive lessons and engaging content made learning enjoyable and effective. It feel confident speaking and using the language in real-life situation.</p>
                     <div class="d-flex align-items-center mb-3">
-                        <h5 class="border-end pe-3 me-3 mb-0">Projects Completed</h5>
-                        <h2 class="text-primary fw-bold mb-0" data-toggle="counter-up">1234</h2>
+                        <h5 class="border-end pe-3 me-3 mb-0">Expert Tutors</h5>
+                        <h2 class="text-primary fw-bold mb-0" data-toggle="counter-up">3564</h2>
                     </div>
-                    <p class="mb-0">Stet no et lorem dolor et diam, amet duo ut dolore vero eos. No stet est diam amet diam ipsum clita labore dolor duo clita.</p>
+                    <p class="mb-0">Our native-level tutors are located Worldwide and will teach you accents and cultural differences.They are rated 4.7/5 on average by our students.</p>
                 </div>
             </div>
         </div>
@@ -232,14 +231,15 @@ include('SessionValidation.php');
         <div class="container">
             <div class="row g-5">
                 <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
-                    <h1 class="display-5 mb-5">Skills & Experience</h1>
-                    <p class="mb-4">Stet no et lorem dolor et diam, amet duo ut dolore vero eos. No stet est diam rebum amet diam ipsum clita dolor duo clita sit.</p>
-                    <h3 class="mb-4">My Skills</h3>
+                    <h1 class="display-5 mb-5">Proficiency & Progress</h1>
+                    <p class="mb-4">Language learning is the level of skill or ability a person has in using a language, including speaking, listening, reading, and writing.</p>
+                    <h3 class="mb-4">Most Rated</h3>
+                    <br>
                     <div class="row align-items-center">
                         <div class="col-md-6">
                             <div class="skill mb-4">
                                 <div class="d-flex justify-content-between">
-                                    <h6 class="font-weight-bold">HTML</h6>
+                                    <h6 class="font-weight-bold">English</h6>
                                     <h6 class="font-weight-bold">95%</h6>
                                 </div>
                                 <div class="progress">
@@ -248,45 +248,45 @@ include('SessionValidation.php');
                             </div>
                             <div class="skill mb-4">
                                 <div class="d-flex justify-content-between">
-                                    <h6 class="font-weight-bold">CSS</h6>
-                                    <h6 class="font-weight-bold">85%</h6>
+                                    <h6 class="font-weight-bold">Spanish</h6>
+                                    <h6 class="font-weight-bold">90%</h6>
                                 </div>
                                 <div class="progress">
-                                    <div class="progress-bar bg-warning" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
+                                    <div class="progress-bar bg-warning" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
                                 </div>
                             </div>
                             <div class="skill mb-4">
                                 <div class="d-flex justify-content-between">
-                                    <h6 class="font-weight-bold">PHP</h6>
-                                    <h6 class="font-weight-bold">90%</h6>
+                                    <h6 class="font-weight-bold">French</h6>
+                                    <h6 class="font-weight-bold">85%</h6>
                                 </div>
                                 <div class="progress">
-                                    <div class="progress-bar bg-danger" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+                                    <div class="progress-bar bg-danger" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
                                 </div>
                             </div>
                         </div>
                         <div class="col-md-6">
                             <div class="skill mb-4">
                                 <div class="d-flex justify-content-between">
-                                    <h6 class="font-weight-bold">Javascript</h6>
-                                    <h6 class="font-weight-bold">90%</h6>
+                                    <h6 class="font-weight-bold">German</h6>
+                                    <h6 class="font-weight-bold">75%</h6>
                                 </div>
                                 <div class="progress">
-                                    <div class="progress-bar bg-danger" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+                                    <div class="progress-bar bg-danger" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
                                 </div>
                             </div>
                             <div class="skill mb-4">
                                 <div class="d-flex justify-content-between">
-                                    <h6 class="font-weight-bold">Angular JS</h6>
-                                    <h6 class="font-weight-bold">95%</h6>
+                                    <h6 class="font-weight-bold">Chinese</h6>
+                                    <h6 class="font-weight-bold">80%</h6>
                                 </div>
                                 <div class="progress">
-                                    <div class="progress-bar bg-dark" role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100"></div>
+                                    <div class="progress-bar bg-dark" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
                                 </div>
                             </div>
                             <div class="skill mb-4">
                                 <div class="d-flex justify-content-between">
-                                    <h6 class="font-weight-bold">Wordpress</h6>
+                                    <h6 class="font-weight-bold">Portuguese</h6>
                                     <h6 class="font-weight-bold">85%</h6>
                                 </div>
                                 <div class="progress">
@@ -299,66 +299,70 @@ include('SessionValidation.php');
                 <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.5s">
                     <ul class="nav nav-pills rounded border border-2 border-primary mb-5">
                         <li class="nav-item w-50">
-                            <button class="nav-link w-100 py-3 fs-5 active" data-bs-toggle="pill" href="#tab-1">Experience</button>
+                            <button class="nav-link w-100 py-3 fs-5 active" data-bs-toggle="pill" href="#tab-1">Learning Path</button>
                         </li>
                         <li class="nav-item w-50">
-                            <button class="nav-link w-100 py-3 fs-5" data-bs-toggle="pill" href="#tab-2">Education</button>
+                            <button class="nav-link w-100 py-3 fs-5" data-bs-toggle="pill" href="#tab-2">Completed Courses</button>
                         </li>
                     </ul>
                     <div class="tab-content">
                         <div id="tab-1" class="tab-pane fade show p-0 active">
                             <div class="row gy-5 gx-4">
                                 <div class="col-sm-6">
-                                    <h5>UI Designer</h5>
+                                    <h5>Intermediate French <br>Grammar</h5>
                                     <hr class="text-primary my-2">
-                                    <p class="text-primary mb-1">2000 - 2045</p>
-                                    <h6 class="mb-0">Apex Software Inc</h6>
+                                    <p class="text-primary mb-1">Progress: 60%</p>
+                                    <h6 class="mb-0">Started: Jan 2024,</h6>
+                                    <h6 class="mb-0">Estimation Completion: Mar 2024</h6>
                                 </div>
                                 <div class="col-sm-6">
-                                    <h5>Product Designer</h5>
+                                    <h5>Advanced Spanish <br>Listening</h5>
                                     <hr class="text-primary my-2">
-                                    <p class="text-primary mb-1">2000 - 2045</p>
-                                    <h6 class="mb-0">Apex Software Inc</h6>
+                                    <p class="text-primary mb-1">Progress: 45%</p>
+                                    <h6 class="mb-0">Started: Feb 2024,</h6>
+                                    <h6 class="mb-0">Estimation Completion: Apr 2024</h6>
                                 </div>
                                 <div class="col-sm-6">
-                                    <h5>Web Designer</h5>
+                                    <h5>Basic German <br>Converstion</h5>
                                     <hr class="text-primary my-2">
-                                    <p class="text-primary mb-1">2000 - 2045</p>
-                                    <h6 class="mb-0">Apex Software Inc</h6>
+                                    <p class="text-primary mb-1">Progress: 75</p>
+                                    <h6 class="mb-0">Started: Dec 2024,</h6>
+                                    <h6 class="mb-0">Estimation Completion: Feb 2024</h6>
                                 </div>
                                 <div class="col-sm-6">
-                                    <h5>Apps Designer</h5>
+                                    <h5>Chinese Vocabulary Expansion</h5>
                                     <hr class="text-primary my-2">
-                                    <p class="text-primary mb-1">2000 - 2045</p>
-                                    <h6 class="mb-0">Apex Software Inc</h6>
+                                    <p class="text-primary mb-1">Progress: 20%</p>
+                                    <h6 class="mb-0">Started: Mar 2024,</h6>
+                                    <h6 class="mb-0">Estimation Completion: May 2024</h6>
                                 </div>
                             </div>
                         </div>
                         <div id="tab-2" class="tab-pane fade show p-0">
                             <div class="row gy-5 gx-4">
                                 <div class="col-sm-6">
-                                    <h5>UI Design Course</h5>
+                                    <h5>Beginner English</h5>
                                     <hr class="text-primary my-2">
-                                    <p class="text-primary mb-1">2000 - 2045</p>
-                                    <h6 class="mb-0">Cambridge University</h6>
+                                    <p class="text-primary mb-1">Completed: Aug 2023</p>
+                                    <h6 class="mb-0">Certificate Earned: Yes </h6>
                                 </div>
                                 <div class="col-sm-6">
-                                    <h5>IOS Development</h5>
+                                    <h5>French Volcabulary Basics</h5>
                                     <hr class="text-primary my-2">
-                                    <p class="text-primary mb-1">2000 - 2045</p>
-                                    <h6 class="mb-0">Cambridge University</h6>
+                                    <p class="text-primary mb-1">Completed: Nov 2023</p>
+                                    <h6 class="mb-0">Certificate Earned: Yes</h6>
                                 </div>
                                 <div class="col-sm-6">
-                                    <h5>Web Design</h5>
+                                    <h5>Spanish Grammer Basics</h5>
                                     <hr class="text-primary my-2">
-                                    <p class="text-primary mb-1">2000 - 2045</p>
-                                    <h6 class="mb-0">Cambridge University</h6>
+                                    <p class="text-primary mb-1">Completed: Jul 20235</p>
+                                    <h6 class="mb-0">Certificate Earned: Yes</h6>
                                 </div>
                                 <div class="col-sm-6">
-                                    <h5>Apps Design</h5>
+                                    <h5>Intro to portuguese</h5>
                                     <hr class="text-primary my-2">
-                                    <p class="text-primary mb-1">2000 - 2045</p>
-                                    <h6 class="mb-0">Cambridge University</h6>
+                                    <p class="text-primary mb-1">Completed: Jan 2024</p>
+                                    <h6 class="mb-0">Certificate Earned: No</h6>
                                 </div>
                             </div>
                         </div>
@@ -390,7 +394,7 @@ include('SessionValidation.php');
                         <div class="ms-sm-4">
                             <h4 class="mb-3">Worldwide community</h4>
                             <h6 class="mb-3">Start from <span class="text-primary">$199</span></h6>
-                            <span>Native speakers teach you their language, while you teach them yours. Millions of people use HelloTalk to practice 150+ languages.</span>
+                            <span>Native speakers teach you their language, while you teach them yours. Millions of people use Fluentflow to practice 150+ languages.</span>
                         </div>
                     </div>
                 </div>
@@ -441,67 +445,67 @@ include('SessionValidation.php');
         <div class="container">
             <div class="row g-5 mb-5 align-items-center wow fadeInUp" data-wow-delay="0.1s">
                 <div class="col-lg-6">
-                    <h1 class="display-5 mb-0">My Languages</h1>
+                    <h1 class="display-5 mb-0">Language</h1>
                 </div>
                 <div class="col-lg-6 text-lg-end">
                     <ul class="list-inline mx-n3 mb-0" id="portfolio-flters">
-                        <li class="mx-3 active" data-filter="*">All Projects</li>
-                        <li class="mx-3" data-filter=".first">UI/UX Design</li>
-                        <li class="mx-3" data-filter=".second">Graphic Design</li>
+                        <li class="mx-3 active" data-filter="*">All Languages</li>
+                        <li class="mx-3" data-filter=".first">Popular</li>
+                        <li class="mx-3" data-filter=".second">Others</li>
                     </ul>
                 </div>
             </div>
             <div class="row g-4 portfolio-container wow fadeInUp" data-wow-delay="0.1s">
                 <div class="col-lg-4 col-md-6 portfolio-item first">
                     <div class="portfolio-img rounded overflow-hidden">
-                        <img class="img-fluid" src="../Assests/Templates/Main/img/project-1.jpg" alt="">
+                        <img class="img-fluid" src="../Assests/Templates/Main/img/lang-1.jpg" alt="">
                         <div class="portfolio-btn">
-                            <a class="btn btn-lg-square btn-outline-secondary border-2 mx-1" href="../Assests/Templates/Main/img/project-1.jpg" data-lightbox="portfolio"><i class="fa fa-eye"></i></a>
+                            <a class="btn btn-lg-square btn-outline-secondary border-2 mx-1" href="../Assests/Templates/Main/img/lang-1.jpg" data-lightbox="portfolio"><i class="fa fa-eye"></i></a>
                             <a class="btn btn-lg-square btn-outline-secondary border-2 mx-1" href=""><i class="fa fa-link"></i></a>
                         </div>
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-6 portfolio-item second">
                     <div class="portfolio-img rounded overflow-hidden">
-                        <img class="img-fluid" src="../Assests/Templates/Main/img/project-2.jpg" alt="">
+                        <img class="img-fluid" src="../Assests/Templates/Main/img/lang3.jpg" alt="">
                         <div class="portfolio-btn">
-                            <a class="btn btn-lg-square btn-outline-secondary border-2 mx-1" href="../Assests/Templates/Main/img/project-2.jpg" data-lightbox="portfolio"><i class="fa fa-eye"></i></a>
+                            <a class="btn btn-lg-square btn-outline-secondary border-2 mx-1" href="../Assests/Templates/Main/img/lang3.jpg" data-lightbox="portfolio"><i class="fa fa-eye"></i></a>
                             <a class="btn btn-lg-square btn-outline-secondary border-2 mx-1" href=""><i class="fa fa-link"></i></a>
                         </div>
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-6 portfolio-item first">
                     <div class="portfolio-img rounded overflow-hidden">
-                        <img class="img-fluid" src="../Assests/Templates/Main/img/project-3.jpg" alt="">
+                        <img class="img-fluid" src="../Assests/Templates/Main/img/lang-2.jpg" alt="">
                         <div class="portfolio-btn">
-                            <a class="btn btn-lg-square btn-outline-secondary border-2 mx-1" href="../Assests/Templates/Main/img/project-3.jpg" data-lightbox="portfolio"><i class="fa fa-eye"></i></a>
+                            <a class="btn btn-lg-square btn-outline-secondary border-2 mx-1" href="../Assests/Templates/Main/img/lang-2.jpg" data-lightbox="portfolio"><i class="fa fa-eye"></i></a>
                             <a class="btn btn-lg-square btn-outline-secondary border-2 mx-1" href=""><i class="fa fa-link"></i></a>
                         </div>
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-6 portfolio-item second">
                     <div class="portfolio-img rounded overflow-hidden">
-                        <img class="img-fluid" src="../Assests/Templates/Main/img/project-4.jpg" alt="">
+                        <img class="img-fluid" src="../Assests/Templates/Main/img/lang5.jpg" alt="">
                         <div class="portfolio-btn">
-                            <a class="btn btn-lg-square btn-outline-secondary border-2 mx-1" href="../Assests/Templates/Main/img/project-4.jpg" data-lightbox="portfolio"><i class="fa fa-eye"></i></a>
+                            <a class="btn btn-lg-square btn-outline-secondary border-2 mx-1" href="../Assests/Templates/Main/img/lang5.jpg" data-lightbox="portfolio"><i class="fa fa-eye"></i></a>
                             <a class="btn btn-lg-square btn-outline-secondary border-2 mx-1" href=""><i class="fa fa-link"></i></a>
                         </div>
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-6 portfolio-item first">
                     <div class="portfolio-img rounded overflow-hidden">
-                        <img class="img-fluid" src="../Assests/Templates/Main/img/project-5.jpg" alt="">
+                        <img class="img-fluid" src="../Assests/Templates/Main/img/lang4.jpg" alt="">
                         <div class="portfolio-btn">
-                            <a class="btn btn-lg-square btn-outline-secondary border-2 mx-1" href="../Assests/Templates/Main/img/project-5.jpg" data-lightbox="portfolio"><i class="fa fa-eye"></i></a>
+                            <a class="btn btn-lg-square btn-outline-secondary border-2 mx-1" href="../Assests/Templates/Main/img/lang4.jpg" data-lightbox="portfolio"><i class="fa fa-eye"></i></a>
                             <a class="btn btn-lg-square btn-outline-secondary border-2 mx-1" href=""><i class="fa fa-link"></i></a>
                         </div>
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-6 portfolio-item second">
                     <div class="portfolio-img rounded overflow-hidden">
-                        <img class="img-fluid" src="../Assests/Templates/Main/img/project-6.jpg" alt="">
+                        <img class="img-fluid" src="../Assests/Templates/Main/img/lang6.jpg" alt="">
                         <div class="portfolio-btn">
-                            <a class="btn btn-lg-square btn-outline-secondary border-2 mx-1" href="../Assests/Templates/Main/img/project-6.jpg" data-lightbox="portfolio"><i class="fa fa-eye"></i></a>
+                            <a class="btn btn-lg-square btn-outline-secondary border-2 mx-1" href="../Assests/Templates/Main/img/lang6.jpg" data-lightbox="portfolio"><i class="fa fa-eye"></i></a>
                             <a class="btn btn-lg-square btn-outline-secondary border-2 mx-1" href=""><i class="fa fa-link"></i></a>
                         </div>
                     </div>
@@ -566,8 +570,8 @@ include('SessionValidation.php');
     <!-- Team End -->
 
 
-    <!-- Testimonial Start -->
-    <div class="container-fluid bg-light py-5 my-5" id="testimonial">
+   <!-- Testimonial Start -->
+   <div class="container-fluid bg-light py-5 my-5" id="testimonial">
         <div class="container-fluid py-5">
             <h1 class="display-5 text-center mb-5 wow fadeInUp" data-wow-delay="0.1s">Testimonial</h1>
             <div class="row justify-content-center">
@@ -587,9 +591,9 @@ include('SessionValidation.php');
                                     <i class="fa fa-quote-left text-primary"></i>
                                 </div>
                             </div>
-                            <p class="fs-5 fst-italic">Dolores sed duo clita tempor justo dolor et stet lorem kasd labore dolore lorem ipsum. At lorem lorem magna ut et, nonumy et labore et tempor diam tempor erat.</p>
+                            <p class="fs-5 fst-italic">I've been using Fluentflow for some time now, and it's been a great experience.The classes are small,so you get a lot of attention from the teacher.they offer a flexible schedule,which make it easy to fit into my busy day.</p>
                             <hr class="w-25 mx-auto">
-                            <h5>Client Name</h5>
+                            <h5>Clara</h5>
                             <span>Profession</span>
                         </div>
                         <div class="testimonial-item text-center">
@@ -599,9 +603,9 @@ include('SessionValidation.php');
                                     <i class="fa fa-quote-left text-primary"></i>
                                 </div>
                             </div>
-                            <p class="fs-5 fst-italic">Dolores sed duo clita tempor justo dolor et stet lorem kasd labore dolore lorem ipsum. At lorem lorem magna ut et, nonumy et labore et tempor diam tempor erat.</p>
+                            <p class="fs-5 fst-italic">Oppurtunities to have speaking club and discuss a lot of questions made my experience great.Near 50% teachers tried to give some additional information and corrected answers.Moreover,I had the beautiful chance to listen to different accents.</p>
                             <hr class="w-25 mx-auto">
-                            <h5>Client Name</h5>
+                            <h5>Daniel</h5>
                             <span>Profession</span>
                         </div>
                         <div class="testimonial-item text-center">
@@ -611,9 +615,9 @@ include('SessionValidation.php');
                                     <i class="fa fa-quote-left text-primary"></i>
                                 </div>
                             </div>
-                            <p class="fs-5 fst-italic">Dolores sed duo clita tempor justo dolor et stet lorem kasd labore dolore lorem ipsum. At lorem lorem magna ut et, nonumy et labore et tempor diam tempor erat.</p>
+                            <p class="fs-5 fst-italic">I started my language journey with a sprint offer.Very good offer, which I've completed successfully.</p>
                             <hr class="w-25 mx-auto">
-                            <h5>Client Name</h5>
+                            <h5>Erin</h5>
                             <span>Profession</span>
                         </div>
                     </div>

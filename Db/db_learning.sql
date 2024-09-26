@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Sep 10, 2024 at 06:05 AM
+-- Generation Time: Sep 26, 2024 at 06:09 AM
 -- Server version: 10.4.24-MariaDB
 -- PHP Version: 8.1.5
 
@@ -178,14 +178,14 @@ CREATE TABLE `tbl_complaint` (
   `complaint_date` varchar(60) NOT NULL,
   `user_id` int(11) NOT NULL,
   `user_reply` varchar(1000) NOT NULL,
-  `user_status` int(11) NOT NULL
+  `complaint_status` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
 -- Dumping data for table `tbl_complaint`
 --
 
-INSERT INTO `tbl_complaint` (`complaint_id`, `complaint_title`, `complaint_content`, `complaint_date`, `user_id`, `user_reply`, `user_status`) VALUES
+INSERT INTO `tbl_complaint` (`complaint_id`, `complaint_title`, `complaint_content`, `complaint_date`, `user_id`, `user_reply`, `complaint_status`) VALUES
 (1, 'gfghdjsbsjh', 'sdfgwfafaweawdad w rar arae', '2024-07-19', 12, '', 0),
 (11, 'r', 'rwrwrwrwrwrw', '2024-07-19', 12, 'sd', 0);
 

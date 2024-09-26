@@ -21,7 +21,12 @@ if (isset($_GET["delID"])) {
     $questionID = $_GET["delID"];
     $delQry = "DELETE FROM tbl_question WHERE question_id='$questionID'";
     if ($con->query($delQry)) {
-        echo "Question deleted successfully.";
+        ?>
+        <script>
+            alert('Question deleted successfully...');
+            window.location="AddQuestionPaper.php";
+        </script>
+        <?php
     } else {
         echo "Error deleting question.";
     }

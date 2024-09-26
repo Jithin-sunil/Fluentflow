@@ -222,18 +222,34 @@
                         
 						
 						<li class="nav-item">
-							<a href="typography.html">
+							<a href="Tutorverification.php">
 								<i class="la la-font"></i>
 								<p>Tutor Verification</p>
 								<!-- <span class="badge badge-danger">25</span> -->
 							</a>
 						</li>
+
+						<li class="nav-item">
+							<a href="Userlist.php">
+								<i class="la la-fonticons"></i>
+								<p>User List</p>
+							</a>
+						</li>
+
 						<li class="nav-item">
 							<a href="ViewComplaint.php">
 								<i class="la la-fonticons"></i>
 								<p>ViewComplaint</p>
 							</a>
 						</li>
+
+						<li class="nav-item">
+							<a href="replycomplaint.php">
+								<i class="la la-fonticons"></i>
+								<p>ReplyComplaint</p>
+							</a>
+						</li>
+
 
 						<li class="nav-item">
 							<a href="ViewReplyedComplaint.php">
@@ -284,125 +300,200 @@ if(isset($_GET["rid"]))
 	 }
 ?>
 
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
+<!DOCTYPE html>
+<html lang="en">
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title>Tutor Verfication</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tutor Verification</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+       body {
+    background-color: #f8f9fa;
+    font-family: Arial, sans-serif;
+}
+
+table {
+    background-color: #fff;
+    border-collapse: collapse;
+    width: 100%;
+    margin-bottom: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+th, td {
+    text-align: center;
+    padding: 12px;
+    border: 1px solid #dee2e6;
+}
+
+th {
+    background-color: #007bff;
+    color: white;
+    font-weight: bold;
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+a {
+    text-decoration: none;
+    color: #007bff;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.btn {
+    padding: 8px 12px;
+    color: white;
+    border-radius: 5px;
+}
+
+.btn-accept {
+    background-color: #28a745;
+}
+
+.btn-reject {
+    background-color: #dc3545;
+}
+
+    </style>
 </head>
-
 <body>
-<form id="form1" name="form1" method="post" action="">
-  <table width="1117" height="173" border="1" align="center">
-    <tr>
-      <td width="109">SLNO</td>
-      <td width="108">Tutor Name</td>
-      <td width="101">Email</td>
-      <td width="120">Contact</td>
-      <td width="115">Address</td>
-      <td width="108">Photo</td>
-      <td width="106">Proof</td>
-      <td width="106">Date of Join</td>
-      <td width="186">Action</td>
-    </tr>
-    <?php 
-	
-		$selqry="select * from tbl_tutor where tutor_status='0'";
-		$tutor=$con->query($selqry);
-		$i=0;
-		while($data=$tutor->fetch_assoc())
-		{	
-		$i++;
-		
-	?>
-      <tr>
-      	<td><?php echo $i ?></td>
-      	<td><?php echo $data ['tutor_name']?></td>
-      	<td><?php echo $data ['tutor_email']?></td>
-      	<td><?php echo $data ['tutor_contact']?></td>
-      	<td><?php echo $data ['tutor_address']?></td>
-      	<td><?php echo $data ['tutor_photo']?></td>
-      	<td><?php echo $data ['tutor_proof']?></td>
-        <td><?php echo $data ['tutor_doj']?></td>
-      	<td><a href="Tutorverification.php?aid=<?php echo $data['tutor_id']?>">Accept</a>&nbsp;&nbsp;
-        <a href="Tutorverification.php?aid=<?php echo $data['tutor_id']?>">Reject</a></td>
-      </tr>
-    <?php
-		}
-	?>
-	
-  </table>
-  <table width="846" height="129" border="1">
-    <tr>
-      <td width="90" height="55">SLNO</td>
-      <td width="122">Tutor Id</td>
-      <td width="152">Tutor Name</td>
-      <td width="151">Tutor Email</td>
-      <td width="138">Tutor DOB</td>
-      <td width="153">Tutor Contact</td>
-      <td width="153">Action</td>
-    </tr>
-    <?php
-		 $selqry="select * from tbl_tutor where tutor_status='1'";
-		 $tutor=$con->query($selqry);
-		 $i=0;
-		 while($data=$tutor->fetch_assoc())
-		 	{
-				$i++;
-		 	
-	?>
-    <tr>
-      <td><?php echo $i ?></td>
-      <td><?php echo $data['tutor_id'] ?></td>
-      <td><?php echo $data['tutor_name'] ?></td>
-      <td><?php echo $data['tutor_email'] ?></td>
-      <td><?php echo $data['tutor_dob'] ?></td>
-      <td><?php echo $data['tutor_contact'] ?></td>
-      <td><a href="Tutorverification.php?rid=<?php echo $data['tutor_id']?>">Reject</a></td>
-    </tr>
+    <div class="container mt-5">
+        <h2 class="text-center mb-4">Pending Tutors</h2>
+        <table class="table table-bordered table-hover">
+            <thead class="thead-dark">
+                <tr>
+                    <th>SLNO</th>
+                    <th>Tutor Name</th>
+                    <th>Email</th>
+                    <th>Contact</th>
+                    <th>Address</th>
+                    <th>Photo</th>
+                    <th>Proof</th>
+                    <th>Date of Join</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+            <tbody>
+                <?php 
+                    $selqry="select * from tbl_tutor where tutor_status='0'";
+                    $tutor=$con->query($selqry);
+                    $i=0;
+                    while($data=$tutor->fetch_assoc()) {	
+                    $i++;
+                ?>
+                <tr>
+                    <td><?php echo $i ?></td>
+                    <td><?php echo $data['tutor_name'] ?></td>
+                    <td><?php echo $data['tutor_email'] ?></td>
+                    <td><?php echo $data['tutor_contact'] ?></td>
+                    <td><?php echo $data['tutor_address'] ?></td>
+                    <td><img src="../Assests/File/Tutor/Photo/<?php echo $data['tutor_photo'] ?>" class="img-thumbnail" width="50"></td>
+					<td><img src="../Assests/File/Tutor/Proof/<?php echo $data['tutor_proof'] ?>" class="img-thumbnail" width="50"></td>
 
-  <?php
-		}
-  ?>
-  </table>
-  <table width="1117" height="173" border="1" align="center">
-    <tr>
-      <td width="109">SLNO</td>
-      <td width="108">Tutor Name</td>
-      <td width="101">Email</td>
-      <td width="120">Contact</td>
-      <td width="115">Address</td>
-      <td width="108">Photo</td>
-      <td width="106">Proof</td>
-      <td width="106">Date of Join</td>
-      <td width="186">Action</td>
-    </tr>
-    <?php 
-	
-		$selqry="select * from tbl_tutor where tutor_status='2' ";
-		$tutor=$con->query($selqry);
-		$i=0;
-		while($data=$tutor->fetch_assoc())
-		{	
-		$i++;
-		
-	?>
-      <tr>
-      	<td><?php echo $i ?></td>
-      	<td><?php echo $data ['tutor_name']?></td>
-      	<td><?php echo $data ['tutor_email']?></td>
-      	<td><?php echo $data ['tutor_contact']?></td>
-      	<td><?php echo $data ['tutor_address']?></td>
-      	<td><?php echo $data ['tutor_photo']?></td>
-      	<td><?php echo $data ['tutor_proof']?></td>
-        <td><?php echo $data ['tutor_doj']?></td>
-      	<td><a href="Tutorverification.php?aid=<?php echo $data['tutor_id']?>">Accept</a>&nbsp;&nbsp;
-      </tr>
-    <?php
-		}
-	?>
-	
-  </table>
+                    <td><?php echo $data['tutor_doj'] ?></td>
+                    <td>
+                        <a href="Tutorverification.php?aid=<?php echo $data['tutor_id']?>" class="btn btn-accept">Accept</a>
+                        <a href="Tutorverification.php?rid=<?php echo $data['tutor_id']?>" class="btn btn-reject">Reject</a>
+                    </td>
+                </tr>
+                <?php } ?>
+            </tbody>
+        </table>
+
+        <!-- Verified Tutors Section -->
+        <h2 class="text-center mb-4">Verified Tutors</h2>
+        <table class="table table-bordered table-hover">
+            <thead class="thead-dark">
+                <tr>
+                    <th>SLNO</th>
+                    <th>Tutor Id</th>
+                    <th>Tutor Name</th>
+                    <th>Tutor Email</th>
+					<th>Tutor Photo</th>
+					<th>Tutor Proof</th>
+                    <th>Tutor DOB</th>
+                    <th>Tutor Contact</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+            <tbody>
+                <?php
+                    $selqry="select * from tbl_tutor where tutor_status='1'";
+                    $tutor=$con->query($selqry);
+                    $i=0;
+                    while($data=$tutor->fetch_assoc()) {	
+                    $i++;
+                ?>
+                <tr>
+				<td><?php echo $i ?></td>
+                    <td><?php echo $data['tutor_name'] ?></td>
+                    <td><?php echo $data['tutor_email'] ?></td>
+                    <td><?php echo $data['tutor_contact'] ?></td>
+                    <td><?php echo $data['tutor_address'] ?></td>
+                    <td><img src="../Assests/File/Tutor/Photo/<?php echo $data['tutor_photo'] ?>" class="img-thumbnail" width="50"></td>
+					<td><img src="../Assests/File/Tutor/Proof/<?php echo $data['tutor_proof'] ?>" class="img-thumbnail" width="50"></td>
+
+                    <td><?php echo $data['tutor_doj'] ?></td>
+                    <td>
+                        <a href="Tutorverification.php?rid=<?php echo $data['tutor_id']?>" class="btn btn-reject">Reject</a>
+                    </td>
+                </tr>
+                <?php } ?>
+            </tbody>
+        </table>
+
+        <!-- Rejected Tutors Section -->
+        <h2 class="text-center mb-4">Rejected Tutors</h2>
+        <table class="table table-bordered table-hover">
+            <thead class="thead-dark">
+                <tr>
+                    <th>SLNO</th>
+                    <th>Tutor Name</th>
+                    <th>Email</th>
+                    <th>Contact</th>
+                    <th>Address</th>
+                    <th>Photo</th>
+                    <th>Proof</th>
+                    <th>Date of Join</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+            <tbody>
+                <?php 
+                    $selqry="select * from tbl_tutor where tutor_status='2'";
+                    $tutor=$con->query($selqry);
+                    $i=0;
+                    while($data=$tutor->fetch_assoc()) {	
+                    $i++;
+                ?>
+                <tr>
+                    <td><?php echo $i ?></td>
+                    <td><?php echo $data['tutor_name'] ?></td>
+                    <td><?php echo $data['tutor_email'] ?></td>
+                    <td><?php echo $data['tutor_contact'] ?></td>
+                    <td><?php echo $data['tutor_address'] ?></td>
+                    <td><img src="../Assests/File/Tutor/Photo/<?php echo $data['tutor_photo'] ?>" class="img-thumbnail" width="50"></td>
+					<td><img src="../Assests/File/Tutor/Proof/<?php echo $data['tutor_proof'] ?>" class="img-thumbnail" width="50"></td>
+
+                    <td><?php echo $data['tutor_doj'] ?></td>
+                    <td>
+                        <a href="Tutorverification.php?aid=<?php echo $data['tutor_id']?>" class="btn btn-accept">Accept</a>
+                    </td>
+                </tr>
+                <?php } ?>
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>
+
 							<!-- <div class="col-md-3">
 								<div class="card card-stats card-warning">
 									<div class="card-body ">

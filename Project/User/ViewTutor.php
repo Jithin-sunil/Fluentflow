@@ -82,13 +82,13 @@ body {
     <?php
          $selqry = "SELECT * FROM tbl_tutor_language p 
                     INNER JOIN tbl_tutor d ON p.tutor_id=d.tutor_id 
-                    INNER JOIN tbl_language s ON p.language_id=s.language_id where d.tutor_status=1";
+                    INNER JOIN tbl_language s ON p.language_id=s.language_id where p.tutor_id=".$_GET['tid'];
         $tut = $con->query($selqry);
         while ($data = $tut->fetch_assoc()) {
     ?>
     <div class="card">
         <div class="card-photo">
-            <img src="../Assests/File/Tutor/Photo/<?php echo $data['tutor_photo']; ?>" alt="Tutor Photo">
+            <img src="../Assests/File/Tutor/Photo/<?php echo $data['tutor_photo']; ?>" width="150" height="150" alt="Tutor Photo">
         </div>
         <div class="card-info">
             <h2><?php echo $data['tutor_name']; ?></h2>
@@ -238,7 +238,7 @@ body {
                       ?>
         </div>
         <div class="card-action">
-            <a href="ViewTutor.php?tutor_id=<?php echo $data['tutor_id']; ?>">View</a>
+            <!-- <a href="ViewTutor.php?tutor_id=<?php echo $data['tutor_id']; ?>">View</a> -->
         </div>
     </div>
     <?php

@@ -67,7 +67,7 @@ include('SessionValidation.php');
 
 
     <!-- Navbar Start -->
-    <nav class="navbar navbar-expand-lg bg-white navbar-light fixed-top  shadow py-lg-0 px-4 px-lg-5 wow fadeIn" >
+    <nav class="navbar navbar-expand-lg bg-white navbar-light fixed-top  shadow py-lg-0 px-4 " data-wow-delay="0.1s" >
     <a href="index.html" class="navbar-brand">
         <h1 class="text-primary fw-bold m-0">FluentFlow</h1>
     </a>
@@ -79,9 +79,8 @@ include('SessionValidation.php');
             <a href="#home" class="nav-item nav-link active">Home</a>
             <a href="MyProfile.php" class="nav-item nav-link">Profile</a>
             <a href="Viewcourse.php" class="nav-item nav-link">Course</a>
-            <a href="ViewTutor.php" class="nav-item nav-link">Tutors</a>
             <a href="Myrequest.php" class="nav-item nav-link">Requests</a>
-            <a href="logout.php" class="nav-item nav-link">Log out</a>
+            <a href="../Logout.php" class="nav-item nav-link">Log out</a>
         </div>
     </div>
 </nav>
@@ -114,3 +113,5 @@ include('SessionValidation.php');
         </div>
     </div>
     <!-- Header End -->
+    <div class="container-xxl py-6" id="about">
+    <div class="container">

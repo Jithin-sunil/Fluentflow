@@ -1,5 +1,6 @@
 <?php
 include("../Assests/connection/connection.php");
+include('Header.php');
 session_start();
 $sel = "select * from tbl_tutor where tutor_id ='".$_GET["id"]."'";
                $res = $con->query($sel);

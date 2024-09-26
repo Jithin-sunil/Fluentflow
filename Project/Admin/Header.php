@@ -200,17 +200,33 @@ include('SessionValidation.php');
                         
 						
 						<li class="nav-item">
-							<a href="typography.html">
+							<a href="Tutorverification.php">
 								<i class="la la-font"></i>
 								<p>Tutor Verification</p>
 								<!-- <span class="badge badge-danger">25</span> -->
 							</a>
+
+						<li class="nav-item">
+							<a href="Userlist.php">
+								<i class="la la-fonticons"></i>
+								<p>User List</p>
+							</a>
+						</li>
+
 						</li>
 						<li class="nav-item">
 							<a href="ViewComplaint.php">
 								<i class="la la-fonticons"></i>
 								<p>ViewComplaint</p>
 							</a>
+
+							<li class="nav-item">
+							<a href="replycomplaint.php">
+								<i class="la la-fonticons"></i>
+								<p>ReplyComplaint</p>
+							</a>
+						</li>
+						
 						</li>
 
 						<li class="nav-item">
